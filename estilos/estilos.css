@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(../imagen/fondo90.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header {
+    background-color: #636262;
+    color: white;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.servicio {
+    margin-bottom: 40px;
+    text-align: center;    
+}
+
+.servicio img {
+    width: 200px;
+    max-width: 300px;
+    height: 200px;
+    max-height: 200px;
+    margin: 1px;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.empanada {
+    flex: 0 0 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+}
+
+
+header .logo {
+    margin-bottom: 20px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Cambio: Mostrar elementos del menú en línea */
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos del contenido */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; /* Añadir margen inferior para separar las imágenes */
+}
+
+.main-content .redes-sociales {
+    margin-top: 20px; /* Agregar espacio entre las imágenes y la sección de redes sociales */
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer div a {
+    color: white;
+}
+
+/* Estilos para las redes sociales */
+.redes-sociales {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
+}
+
+.redes-sociales h2 {
+    margin-bottom: 10px; /* Espacio entre el título y los enlaces */
+}
+
+.redes-sociales .redes {
+    display: flex; /* Hace que los enlaces se muestren en línea */
+    justify-content: center; /* Centra horizontalmente los enlaces */
+}
+
+.redes-sociales a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px; /* Espacio entre los enlaces de las redes sociales */
+}
+
+/* Estilos del menú */
+.menu {
+    background-color: #f8f9fa; /* Cambio: Cambiar el color de fondo del menú */
+    padding: 20px;
+}
+
+.contenedor-menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedor-menu article {
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.contenedor-menu article:last-child {
+    margin-right: 0;
+}
+
+.categoria {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.nombre {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.precio {
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.descripcion {
+    margin-bottom: 20px;
+}
+
+main .container h1 {
+    text-align: center;
+    background-color: rgb(159, 241, 241);
+    padding: 15px 0;
+    margin: 0;
+    
+
+}
+main .row .servicio h3 {
+    background-color: #7a7777;
+    color: #f8f9fa;
+    text-align: center;
+    padding: 8px 0;
+}
+main .row .servicio p {
+    background-color: #f0f0f0;
+    text-align: justify;
+}
+
+.contenido h1 {
+    text-align: center;
+}
+
+.contenido h2 {
+    text-align: left;
+    margin: 20px;
+    height: max-content;
+    
+}
+
+.contenido p {
+    text-align: justify;    
+    margin: 20px;
+}
+.contenido li {
+    text-align: center;
+    margin: 20px;
+}
+
+.boton {
+    background-color: #3a3a39;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.boton:hover {
+    background-color: #888a88;
+}
