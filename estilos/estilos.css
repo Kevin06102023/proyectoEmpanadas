@@ -16,13 +16,41 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #636262;
     color: white;
     display: flex;
     padding: 20px;
     justify-content: space-between;
     align-items: center;
+    
 }
+
+.servicio {
+    margin-bottom: 40px;
+    text-align: center;    
+}
+
+.servicio img {
+    width: 200px;
+    max-width: 300px;
+    height: 200px;
+    max-height: 200px;
+    margin: 1px;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.empanada {
+    flex: 0 0 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+}
+
 
 header .logo {
     margin-bottom: 20px;
@@ -147,4 +175,58 @@ footer div a {
 
 .descripcion {
     margin-bottom: 20px;
+}
+
+main .container h1 {
+    text-align: center;
+    background-color: rgb(159, 241, 241);
+    padding: 15px 0;
+    margin: 0;
+    
+
+}
+main .row .servicio h3 {
+    background-color: #7a7777;
+    color: #f8f9fa;
+    text-align: center;
+    padding: 8px 0;
+}
+main .row .servicio p {
+    background-color: #f0f0f0;
+    text-align: justify;
+}
+
+.contenido h1 {
+    text-align: center;
+}
+
+.contenido h2 {
+    text-align: left;
+    margin: 20px;
+    height: max-content;
+    
+}
+
+.contenido p {
+    text-align: justify;    
+    margin: 20px;
+}
+.contenido li {
+    text-align: center;
+    margin: 20px;
+}
+
+.boton {
+    background-color: #3a3a39;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.boton:hover {
+    background-color: #888a88;
 }
