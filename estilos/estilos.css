@@ -138,52 +138,70 @@ footer div a {
 
 /* Estilos del menú */
 .menu {
-    background-color: #f8f9fa; /* Cambio: Cambiar el color de fondo del menú */
-    padding: 20px;
+    margin: 20px auto; /* Centrar el menú horizontalmente */
+    max-width: 1200px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 3px solid blue;
+    padding: 50px; 
 }
 
 .contenedor-menu {
-    display: flex;
-    flex-wrap: wrap;
+    background: transparent;
+    overflow: hidden;
+    border: 1px solid red; 
+    padding: 10px;
 }
 
-.contenedor-menu article {
-    flex: 1;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-
-.contenedor-menu article:last-child {
-    margin-right: 0;
+article {
+    width: 50%;
+    float: left;
+    padding: 80px;
 }
 
 .categoria {
-    font-weight: bold;
-    margin-bottom: 10px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.platillo {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 4px dotted yellowgreen;
+    overflow: hidden;
 }
 
 .nombre {
-    font-size: 18px;
-    margin-bottom: 5px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    float: left;
 }
 
 .precio {
-    color: #007bff;
-    margin-bottom: 5px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    float: right;
 }
 
 .descripcion {
-    margin-bottom: 20px;
+    font-size: 16px;
+    color: #676767;
+    clear: both;
 }
 
+/* Estilos específicos para el contenido */
 main .container h1 {
     text-align: center;
     background-color: rgb(159, 241, 241);
     padding: 15px 0;
     margin: 0;
     
-
 }
+
 main .row .servicio h3 {
     background-color: #7a7777;
     color: #f8f9fa;
