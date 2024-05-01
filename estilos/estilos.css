@@ -5,6 +5,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 body {
     background-image: url(../imagen/fondo90.jpg);
     background-size: cover;
@@ -22,36 +23,9 @@ header {
     padding: 20px;
     justify-content: space-between;
     align-items: center;
-    
 }
 
-.servicio {
-    margin-bottom: 40px;
-    text-align: center;    
-}
-
-.servicio img {
-    width: 200px;
-    max-width: 300px;
-    height: 200px;
-    max-height: 200px;
-    margin: 1px;
-    padding: 10px;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.empanada {
-    flex: 0 0 calc(25% - 20px);
-    max-width: calc(25% - 20px);
-}
-
-header .logo {
+.header .logo {
     margin-bottom: 20px;
 }
 
@@ -64,7 +38,7 @@ header nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Cambio: Mostrar elementos del menú en línea */
+    display: flex; /* Mostrar elementos del menú en línea */
 }
 
 header nav ul li {
@@ -78,43 +52,187 @@ header nav ul li a {
 
 header nav ul li a:hover {
     text-decoration: underline;
+    color: #007bff;
 }
 
-/* Estilos del contenido */
+/*****Main*******/
 .main-content {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.main-content img {
+.main-content h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #7274f1;
+    padding: 20px;
+    font-weight: 300;
+    background-color: #fff;
+}
+
+.main-content .row {
+    display: flex;    
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #ccc;
+}
+
+.main-content .row .empanada {
+    flex: 0 0 calc(30% - 20px);
+    max-width: calc(30% - 20px);
+}
+
+.main-content .servicio {
+    margin-bottom: 40px;
+    text-align: center;    
+}
+
+.main-content .servicio h3 {
+    text-align: center;
+    padding: 10px;
+    font-weight: 300;
+    background-color: #f78282;
+    border-radius: 6px;
+    margin: 10px;
+}
+
+.main-content .servicio img {
+    width: 200px;
+    max-width: 300px;
+    height: 200px;
+    max-height: 200px;
+    margin: 1px;
+    padding: 10px;
+    opacity: .5;
+}
+
+.main-content .servicio img:hover {
+    opacity: 1;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .03s ease;
+    transition: all .03s ease;
+}
+
+/*******contacto*****/
+.formulario-contacto {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.formulario-contacto .contacto {
+    text-align: center;
+    font-size: 60px;
+    color: #7274f1;
+    padding: 20px;
+    font-weight: 300;
+}
+
+.formulario-contacto .formulario {
+    display: flex;
+    flex-direction: column;  
+    background-color: #b4d4f5;
+    padding: 20px;
+    border-radius: 5px;  
+}
+.formulario-contacto .formulario input[type="text"],
+.formulario-contacto .formulario input[type="email"] {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: calc(50% - 5px);
     max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto 20px; /* Añadir margen inferior para separar las imágenes */
 }
 
-.main-content .redes-sociales {
-    margin-top: 20px; /* Agregar espacio entre las imágenes y la sección de redes sociales */
+.formulario-contacto .formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
-/* Estilos del pie de página */
+.formulario-contacto .formulario input[type="button"] {
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: rgb(100, 190, 241);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+}
+
+.formulario-contacto .formulario input[type="button"]:hover {
+    background-color: #4290e9;
+}
+
+/*****Mapa****/
+.mapa {
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.mapa h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #7274f1;
+    padding: 20p;
+    font-weight: 300;
+    background-color: #fff;
+
+}
+
+/******Dirección******/
+.info-contacto {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-top: 1px;
+}
+
+.info-contacto p {
+    margin-bottom: 10px;
+}
+
+.info-contacto i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/******Redes Sociales******/
 footer {
     background-color: #333;
     color: white;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
 }
 
-footer p {
-    margin: 0;
+footer i {
+    margin-right: 10px;
+    font-size: 30px
 }
 
 footer div a {
     color: white;
+    margin: 10px;
 }
 
-/* Estilos para las redes sociales */
+footer div a:hover {
+    color: rgb(4, 0, 255);
+}
+
 .redes-sociales {
     display: flex;
     flex-direction: column; /* Alinea los elementos verticalmente */
@@ -122,7 +240,7 @@ footer div a {
 }
 
 .redes-sociales h2 {
-    margin-bottom: 10px; /* Espacio entre el título y los enlaces */
+    margin-bottom: 20px; /* Espacio entre el título y los enlaces */
 }
 
 .redes-sociales .redes {
@@ -136,101 +254,103 @@ footer div a {
     margin-right: 10px; /* Espacio entre los enlaces de las redes sociales */
 }
 
-/* Estilos del menú */
+.redes-sociales .bi-facebook {
+    color: #3b5998;
+}
+
+.redes-sociales .bi-instagram {
+    color: #c13584;
+}
+
+/*****Menu******/
 .menu {
-    margin: 20px auto; /* Centrar el menú horizontalmente */
-    max-width: 1200px;
+    background-color: #f8f9fa; /* Cambio: Cambiar el color de fondo del menú */
+    padding: 20px;
+}
+
+.menu h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #7274f1;
+    padding: 30px;
+    font-weight: 300;
+}
+.menu h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 4px dotted #a00202;
+    overflow: hidden;
+}
+
+.menu .contenedor-menu2 {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    border: 3px solid blue;
-    padding: 50px; 
+    justify-content: space-between;    
 }
 
-.contenedor-menu {
-    background: transparent;
-    overflow: hidden;
-    border: 1px solid red; 
-    padding: 10px;
+.menu .contenedor-menu2 article {
+    flex-basis: calc(25% - 20px);
+    margin-bottom: 20px;
 }
 
-article {
-    width: 50%;
-    float: left;
-    padding: 80px;
-}
-
-.categoria {
-    text-align: center;
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 40px;
-}
-
-.platillo {
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    border-bottom: 4px dotted yellowgreen;
-    overflow: hidden;
+.menu .contenedor-menu2 .categoria {
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .nombre {
-    font-size: 20px;
-    margin-bottom: 15px;
-    float: left;
+    font-size: 18px;
+    margin-bottom: 5px;
+    
 }
 
 .precio {
-    font-size: 20px;
-    margin-bottom: 15px;
-    float: right;
+    color: #007bff;
+    margin-bottom: 5px;
 }
 
 .descripcion {
-    font-size: 16px;
+    margin-bottom: 20px;
     color: #676767;
     clear: both;
 }
 
-/* Estilos específicos para el contenido */
-main .container h1 {
-    text-align: center;
-    background-color: rgb(159, 241, 241);
-    padding: 15px 0;
-    margin: 0;
-    
+/********Media query para tablets********/
+@media only screen and (max-width: 768px) {
+    .menu .contenedor-menu2 article {
+        flex-basis: calc(50% - 20px);
+    }
 }
 
-main .row .servicio h3 {
-    background-color: #7a7777;
-    color: #f8f9fa;
-    text-align: center;
-    padding: 8px 0;
+/**********Media query para móviles************/
+@media only screen and (max-width: 576px) {
+    .menu .contenedor-menu2 article {
+        flex-basis: calc(100% - 20px);
+    }
 }
-main .row .servicio p {
-    background-color: #f0f0f0;
-    text-align: justify;
+
+/*****Información*******/
+.contenido {    
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .contenido h1 {
     text-align: center;
+    text-decoration: underline;
+    padding: 20px;
+    font-size: 40px;
+    color: #7274f1;
+    font-weight: 300;
 }
-
-.contenido h2 {
-    text-align: left;
-    margin: 20px;
-    height: max-content;
     
-}
-
 .contenido p {
-    text-align: justify;    
-    margin: 20px;
-}
-.contenido li {
-    text-align: center;
-    margin: 20px;
+    text-align: justify;
 }
 
 .boton {
