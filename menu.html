@@ -5,38 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="estilos/estilos.css">
-    <title>Menu</title>
+    <title>Menú</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1>EL REY EMPANADA</h1>
-
         <div class="logo">
-            <img src="imagen/LOGOLLL.png" alt="Empanadas Artesanales" style="width: 180px; height: 180px;">
+            <img src="imagen/LOGOLLL.png" alt="Empanadas Artesanales" style="width: 280px; height: 280px;">
         </div>
-        <nav>
+        <nav class="nav">
             <ul>
                 <li><a href="index.html"><i class="bi bi-house-door-fill"></i> Inicio</a></li>
                 <li><a href="menu.html"><i class="bi bi-card-list"></i> Menú</a></li>
                 <li><a href="nosotros.html"><i class="bi bi-people-fill"></i> Nosotros</a></li>
-                <li><a href="contactos.html"><i class="bi bi-envelope"></i> Contacto</a></li>
+                <li><a href="index.html#contacto" id="btn-contacto"><i class="bi bi-envelope"></i> Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <!--Inicio Menú-->
+    <!-- Inicio Menú -->
     <section class="menu">
         <div class="contenedor">
-            <h3 class="titulo" id="platillos">Menú</h3>
+            <h2 class="titulo" id="platillos">Menú</h2>
             <div class="contenedor-menu">
                 <div class="contenedor-menu2">
-                    <article>
-                        <p class="categoria">Empanadas</p>
+                    <article class="categoria-menu">
+                        <h3 class="categoria">Empanadas</h3>
                         <div class="platillo">
                             <p class="nombre">Carne</p>
                             <p class="precio">$3.50</p>
-                            <p class="descripcion">
-                            </p>
+                            <p class="descripcion"></p>
                         </div>
                         <div class="platillo">
                             <p class="nombre">Pollo</p>
@@ -64,80 +62,78 @@
                             <p class="descripcion"></p>
                         </div>
                     </article>
-                    <!--fin de la seccion comer-->
+                
+                    <article class="categoria-menu">
+                        <h3 class="categoria">Cafés</h3>
+                        <div class="platillo">
+                            <p class="nombre">Cappuccino</p>
+                            <p class="precio">$6.00</p>
+                            <p class="descripcion"></p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Americano</p>
+                            <p class="precio">$4.00</p>
+                            <p class="descripcion"></p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Moccaccino</p>
+                            <p class="precio">$6.00</p>
+                            <p class="descripcion"></p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Café Latte</p>
+                            <p class="precio">$4.75</p>
+                            <p class="descripcion"></p>
+                        </div>
+                    </article>
+                    <article class="categoria-menu">
+                        <h3 class="categoria">Bebidas Calientes</h3>
+                        <div class="platillo">
+                            <p class="nombre">Aromáticas</p>
+                            <p class="precio">$3.70</p>
+                            <p class="descripcion"></p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Agua de Panela</p>
+                            <p class="precio">$4.00</p>
+                            <p class="descripcion"></p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Chocolate</p>
+                            <p class="precio">$5.75</p>
+                            <p class="descripcion"></p>
+                        </div>
+                    </article>
+                    <article class="categoria-menu">
+                        <h3 class="categoria">Bebidas</h3>
+                        <div class="platillo">
+                            <p class="nombre">Jugos</p>
+                            <p class="precio">$3.25</p>
+                            <p class="descripcion"></p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Agua en Botella</p>
+                            <p class="precio">$2.00</p>
+                            <p class="descripcion"></p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Gaseosas</p>
+                            <p class="precio">$2.75</p>
+                            <p class="descripcion"></p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Limonada</p>
+                            <p class="precio">$1.50</p>
+                            <p class="descripcion"></p>
+                        </div>
+                    </article>
                 </div>
-                <article>
-                    <p class="categoria">Cafes</p>
-                    <p class="nombre">Cappuccino</p>
-                    <p class="precio">$6.00</p>
-                    <p class="descripcion"></p>
-
-                    <div>
-                        <p class="nombre">Americano</p>
-                        <p class="precio">$4.00</p>
-                        <p class="descripcion"></p>
-                    </div>
-
-                    <div>
-                        <p class="nombre">Moccaccino</p>
-                        <p class="precio">$6.00</p>
-                        <p class="descripcion"></p>
-                    </div>
-
-                    <div>
-                        <p class="nombre">Cafe latte</p>
-                        <p class="precio">$4.75</p>
-                        <p class="descripcion"></p>
-                    </div>
-                </article>
-
-                <article>
-                    <p class="categoria">Bebidas calientes</p>
-                    <p class="nombre">Aromaticas</p>
-                    <p class="precio">$3.70</p>
-                    <p class="descripcion"></p>
-
-                    <div>
-                        <p class="nombre">Agua de panela</p>
-                        <p class="precio">$4.00</p>
-                        <p class="descripcion"></p>
-                    </div>
-
-                    <div>
-                        <p class="nombre">Chocolate</p>
-                        <p class="precio">$5.75</p>
-                        <p class="descripcion"></p>
-                    </div>
-                </article>
-
-                <article>
-                    <p class="categoria">Bebidas</p>
-                    <p class="nombre">Jugos</p>
-                    <p class="precio">$3.25</p>
-                    <p class="descripcion"></p>
-
-                    <div>
-                        <p class="nombre">Agua en botella</p>
-                        <p class="precio">$2.00</p>
-                        <p class="descripcion"></p>
-                    </div>
-
-                    <div>
-                        <p class="nombre">Gaseosas</p>
-                        <p class="precio">$2.75</p>
-                        <p class="descripcion"></p>
-                    </div>
-
-                    <div>
-                        <p class="nombre">Limonada</p>
-                        <p class="precio">$1.50</p>
-                        <p class="descripcion"></p>
-                    </div>
-                </article>
             </div>
         </div>
     </section>
-    <footer>
+    <!-- Fin Menú -->
+
+    <footer class="footer">
         <div class="container">
             <p>&copy; 2024 EL REY EMPANADA. Todos los derechos reservados.</p>
         </div>
